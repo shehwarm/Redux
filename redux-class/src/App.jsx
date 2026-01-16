@@ -1,15 +1,14 @@
-import './App.css'
-import Todo from './components/todo';
+import './App.css';
+import AddForm from './components/AddForm';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 
 function App() {
   return (
-    <>
-      <Provider store={store}>
-        <Todo />
-      </Provider>
-    </>
+    <Provider store={store}>
+      <h1>Redux Todo App</h1>
+      <AddForm />
+    </Provider>
   );
 }
 
